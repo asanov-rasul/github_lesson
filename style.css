@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff; /* светлый фон для страницы */
+    color: #333;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #6ec1e4; /* светло-голубой */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    z-index: 10;
+}
+
+.header nav {
+    margin-top: 10px;
+}
+
+.header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header nav a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    display: flex;
+    margin-top: 80px; /* Отступ для фиксированного заголовка */
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 80px; /* Сдвиг относительно заголовка */
+    width: 250px;
+    background-color: #ffecb3; /* светлый желтый */
+    padding: 20px;
+    border-right: 2px solid #ddd;
+    z-index: 5;
+    height: 100vh; /* Высота 100% от окна */
+    overflow-y: auto; /* Добавляем прокрутку, если контента будет больше */
+}
+
+.sidebar h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.sidebar p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.sidebar img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.main {
+    margin-left: 270px; /* Отступ для боковой панели */
+    margin-top: 20px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.main h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #007acc; /* синий для заголовков */
+}
+
+.main p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.main ul {
+    margin: 15px 0;
+    font-size: 16px;
+}
+
+.main ul li {
+    margin-bottom: 10px;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.project {
+    width: 30%;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.project h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 14px;
+    color: #555;
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    background-color: #6ec1e4; /* тот же цвет, что и для заголовка */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    z-index: 999;
+}
